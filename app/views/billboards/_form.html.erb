@@ -1,0 +1,11 @@
+<%= form_with(model: @billboard, local: true, class: "ui form") do |f| %>
+    <div class="field">
+      <%= f.label :Top_100_Songs %>
+      <%= f.text_field :top_100_Songs, required: true, placeholder: "Top_100_Songs" %>
+    </div>
+    <div class="field">
+      <%= f.label :Artist_100 %>
+      <%= f.text_field :artist_100, required: true, placeholder: "Artist_100" %>
+    </div>
+  
+  <% end %>

@@ -10,6 +10,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="ui container">
+       <%= yield %>
+    </div>
+    <div class="header_loggedin">
+      <div class="right">
+         <%= link_to "Home", root_path %>
+         <%= link_to "About", about_path %>
+         <%#link_to "Hot 100 Songs 🎧", song_path %>
+         <%= link_to "Hot 100 Artists🎤", artist_path %>
+     </div>
+   </div>
   </body>
 </html>

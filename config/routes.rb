@@ -1,3 +1,15 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root "billboards#index"
+  resources :billboards 
+  
+  get 'home ', to: 'pages#home'
+  get 'about', to: 'pages#about'
+  get 'artist', to: 'artists#index'
+  get 'new_artist_path', to: 'artists#index'  
+  get 'edit_artist_path', to: 'artists#index'
+  get 'song_path', to: 'songs#index'
+  
 end
+  
+  
+

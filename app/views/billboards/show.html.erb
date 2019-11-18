@@ -1,0 +1,15 @@
+<div class="ui card">
+  <div class="image">
+    <img src=Faker::Avatar.image<%= @billboard.avatar %>?set=set4" />
+  </div>
+  <div class="content">
+    <p class="header">
+      <%= @billboard.top_100_songs%> 
+    </p>
+  
+  
+  <div class="extra content">
+    <%= link_to 'Edit', edit_billboard_path(@billboard) %> |
+    <%= link_to 'Back', billboards_path %>
+  </div>
+</div>
